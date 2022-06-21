@@ -1,0 +1,18 @@
+<div class="column">
+  <div class="card">
+    <div class="card-content">
+      <div class="has-text-centered">
+        <img [src]="product.image" />
+      </div>
+      <h3 class="title is-3 has-text-centered" id="card-product-description">
+        {{ product.name }}
+      </h3>
+      <p class="has-text-centered">
+        {{ product.description }}
+      </p>
+    </div>
+    <div class="buttons">
+      <button (click)="addProduct(product)" class="button is-primary">Add</button>
+    </div>
+  </div>
+</div>
